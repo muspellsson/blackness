@@ -5,7 +5,7 @@ Player::Player() :
 {
 }
 
-void Player::PutAt(uint32_t nx, uint32_t ny)
+void Player::PutAt(int32_t nx, int32_t ny)
 {
 	this->x = nx;
 	this->y = ny;

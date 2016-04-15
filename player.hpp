@@ -3,12 +3,22 @@
 
 #include <cstdint>
 
+typedef enum race {
+	RaceHuman=0,
+	RaceElf,
+	RaceTroll,
+	RaceDwarf,
+	RaceMinotaur,
+	RaceVampire
+} race_t;
+
 class Player {
-	uint32_t x, y;
-	uint32_t hp, sp;
+	int32_t x, y;
+	int32_t hp, sp;
+	race_t race;
 
 	Player();
-	void PutAt(uint32_t, uint32_t);
+	void PutAt(int32_t, int32_t);
 
 };
 

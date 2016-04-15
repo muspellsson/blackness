@@ -24,7 +24,7 @@ WARNINGS=-g -O -Wall -Weffc++ -pedantic  \
 CXXFLAGS=-std=c++11 -I$(CURSES_INC) $(WARNINGS)
 LDFLAGS=-L$(CURSES_LIB) -static-libstdc++ -lcurses
 
-OBJ=player.o screen.o window.o main.o
+OBJ=map.o player.o screen.o terrain.o window.o main.o
 
 all: $(OBJ)
 	g++ $(OBJ) $(LDFLAGS) -o blackness

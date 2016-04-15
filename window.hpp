@@ -10,18 +10,18 @@ protected:
 
 	Window();
 public:
-	Window(uint32_t, uint32_t, uint32_t, uint32_t);
+	Window(int32_t, int32_t, int32_t, int32_t);
 	Window(Window&);
 	~Window();
 	Window& operator=(const Window&) = delete;
 
 	void KeyPad(bool);
-	uint32_t GetChar();
+	int32_t GetChar();
 	void Refresh();
-	uint32_t Width();
-	uint32_t Height();
-	uint32_t PosX();
-	uint32_t PosY();
+	int32_t Width();
+	int32_t Height();
+	int32_t PosX();
+	int32_t PosY();
 
 	template<typename... Args>
 	void PrintFormat(const std::string &fmt, Args... args)
