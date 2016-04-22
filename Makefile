@@ -1,4 +1,4 @@
-CXX=clang++
+CXX=g++
 CURSES_INC=.
 WARNINGS=-g -O -Wall -Weffc++ -pedantic  \
 -pedantic-errors -Wextra -Waggregate-return -Wcast-align \
